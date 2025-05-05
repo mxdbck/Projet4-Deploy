@@ -40,7 +40,7 @@ airport_options = dict(sorted(airport_options.items(), key=lambda item: item[1])
 # quel algo tu veux ???
 if algo == "t-spanner":
     routes = t_spanner_full(prob, t=1.1 + 0.25*3500.0 / 10_000.0)
-elif algo == "union":
+elif algo == "union-dijkstra":
     routes = union_dijkstra(prob, 0)
 elif algo == "union-spanner" :
     routes = union_spanner(prob, 1.1 + 0.25*3500.0 / 10_000.0 )
