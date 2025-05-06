@@ -15,7 +15,7 @@ st.title("Airport Connections Visualization")
 
 
 # Options disponibles
-options = ["t-spanner", "union-dijkstra", "union-spanner", "union-spanner-search", "all", "genetic"]
+options = ["t-spanner", "union-dijkstra", "union-spanner", "union-spanner-search", "all"]
 
 # Valeur par défaut
 algo = st.selectbox("Choisir l'algo :", options, index=options.index("union-spanner"))
